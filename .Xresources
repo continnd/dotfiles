@@ -1,0 +1,8 @@
+URxvt.termName: rxvt-256color
+
+URxvt.foreground: #12CE4F
+URxvt.background: #004B0F
+! Blue
+URxvt.color4: #5566FF
+! Bright blue
+URxvt.color12: #7799FF
