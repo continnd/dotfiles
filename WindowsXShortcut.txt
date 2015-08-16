@@ -1,0 +1,1 @@
+D:\cygwin64\bin\run.exe --quote /usr/bin/bash.exe -l -c "cd; /usr/bin/startxwin"

@@ -33,12 +33,13 @@ noremap \ ,
 syntax on
 " Jump to matching keyword
 runtime macros/matchit.vim
-map <C-n> :NERDTreeToggle<CR>
 
-let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q"
-let &t_EI.="\e[1 q"
-let &t_te.="\e[0 q"
+colorscheme molokai
+
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
 
 " Filetype-specific text properties {{{
 autocmd FileType text,vimshell set textwidth=0

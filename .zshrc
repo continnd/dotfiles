@@ -58,6 +58,9 @@ fi
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*:(processes|jobs)' menu yes select=2
 
+# Limit Coredump size
+limit coredumpsize 102400
+
 # Options {{{
 ##############################################################################
 setopt auto_cd             # cd when only directory is entered
@@ -148,8 +151,6 @@ export TERM=xterm-256color
 autoload -U colors && colors
 autoload -U add-zsh-hook
 add-zsh-hook precmd changePrompt
-export PATH=/home/mizunon/gentoo/bin/:/home/mizunon/gentoo/usr/bin:$PATH:/shared/raodm/bin:/home/continnd/.bin/
 export PROMPT="%F{$(($RANDOM%255))}%m-> %n-> %f"
 export RPROMPT="[%~]"
 changePrompt(){export PROMPT="%F{$(($RANDOM%255))}%m-> %n-> %f"}
-

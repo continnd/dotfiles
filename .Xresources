@@ -1,8 +1,26 @@
 URxvt.termName: rxvt-256color
 
-URxvt.foreground: #12CE4F
-URxvt.background: #004B0F
+URxvt.depth: 32
+URxvt.foreground: snow
+URxvt.background: black
 ! Blue
 URxvt.color4: #5566FF
 ! Bright blue
 URxvt.color12: #7799FF
+
+URxvt.transparent: true
+URxvt.shading: 15
+
+! Disable scrollbar
+URxvt.scrollBar: false
+
+URxvt.saveLines: 5000
+URxvt.pointerBlank: true
+URxvt.urgentOnBell: true
+
+! Left click to open URL
+URxvt.perl-ext-common: url-select
+URxvt.url-select.button: 1
+! Underline URLs
+URxvt.url-select.underline: true
+URxvt.url-select.launcher: chromium --incognito
